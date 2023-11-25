@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtMaxMarks"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Maximum Marks:" />
+
+    <EditText
+        android:id="@+id/edtMaxMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Maximum Marks"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtNoCreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter number of Subjects"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/lnrDynamicEditTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTotalMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
